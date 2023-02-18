@@ -26,34 +26,67 @@
 </head>
 
 <body>
-    <header>
-        <nav class="main-header">
-            <!-- TO-DO -> Logo / Input-Search / Login / Languages / Shopping Cart -->
-        </nav>
-        <nav class="menu-navbar">
-            <ul class="consoles-list">
-                <li>
-                    <a></a>
-                    <p>PlayStation 5</p>
-                </li>
-                <li>
-                    <a></a>
-                    <p>Xbox Series X/S</p>
-                </li>
-                <li>
-                    <a></a>
-                    <p>Nintendo Switch</p>
-                </li>
-                <li>
-                    <a></a>
-                    <p>PlayStation 4</p>
-                </li>
-                <li>
-                    <a></a>
-                    <p>Xbox One X</p>
-                </li>
-            </ul>
-        </nav>
+    <header class="tc-header">
+        <div class="tc-layout-container">
+            <div class="tc-header-layout tc-layout-flex">
+                <div class="tc-header-logo&login-container tc-layout-flex">
+                    <a href="#" role="link" aria-label="#" class="tc-header--logo">
+                        <img class="logo img-responsive"
+                            src="https://www.todoconsolas.com/img/todoconsolas-logo-1582897196.jpg" alt="TodoConsolas">
+                    </a>
+                    <div class="tc-header--title">
+                        <h1>Descubre las mejores ofertas!</h1>
+                    </div>
+                    <div class="tc-header-login-container">
+                        <a href="https://www.todoconsolas.com/es/iniciar-sesion?back=my-account" role="Login"
+                            aria-label="#" class="tc-header--login tc-layout-flex">
+                            <img class="tc-header--login-image"
+                                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSI1MHB4IiBoZWlnaHQ9IjUwcHgiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTAgNTAiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Y2lyY2xlIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwNTZEQSIgc3Ryb2tlLXdpZHRoPSIyLjQ0MjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBjeD0iMjUuNTIzIiBjeT0iMjQuNTA3IiByPSIyMC4yNTEiLz4KPGc+Cgk8cGF0aCBmaWxsPSIjMDA1NkRBIiBkPSJNMjUuNywyNC4xNDNjMy42ODUsMCw2LjY3Ni0yLjk5Miw2LjY3Ni02LjY3NWMwLTMuNjg4LTIuOTkxLTYuNjU4LTYuNjc2LTYuNjU4CgkJYy0zLjY4OCwwLTYuNjc3LDIuOTktNi42NzcsNi42NThDMTkuMDIzLDIxLjEzMSwyMi4wMTMsMjQuMTQzLDI1LjcsMjQuMTQzeiIvPgoJPHBhdGggZmlsbD0iIzAwNTZEQSIgZD0iTTI5LjgzOCwyNS4zMWgtOC4xOTNjLTQuNjA4LDAtOC4zNzcsMy43NDUtOC4zNzcsOC4zNzZjMCwwLjQ5MSwwLjM5MiwwLjg4MSwwLjg4NiwwLjg4MUgzNy4zMwoJCWMwLjQ5NCwwLDAuODgzLTAuMzksMC44ODMtMC44ODFDMzguMjEzLDI5LjA3NiwzNC40NjYsMjUuMzEsMjkuODM4LDI1LjMxeiIvPgo8L2c+Cjwvc3ZnPgo="
+                                alt="Non-logged User">
+                            <span class="tc-header--login-text">
+                                <p>Entra o regístrate</p>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="tc-header-navbar-container tc-layout-flex">
+                    <nav role="navigation" aria-label="#" class="tc-header-navbar">
+                        <ul class="tc-header-navbar_list">
+                            <li>
+                                <a href="https://www.todoconsolas.com/es/11-gaming?q=Categor%C3%ADas-Juegos+PS5"
+                                    role="link" aria-label="#" class="tc-header--nav-link">
+                                    <p>PlayStation 5</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.todoconsolas.com/es/11-gaming?q=Categor%C3%ADas-Juegos+Xbox+X"
+                                    role="link" aria-label="#" class="tc-header--nav-link">
+                                    <p>Xbox Series X/S</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.todoconsolas.com/es/11-gaming?q=Categor%C3%ADas-Juegos+Switch"
+                                    role="link" aria-label="#" class="tc-header--nav-link">
+                                    <p>Nintendo Switch</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.todoconsolas.com/es/11-gaming?q=Categor%C3%ADas-Juegos+PS4"
+                                    role="link" aria-label="#" class="tc-header--nav-link">
+                                    <p>PlayStation 4</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.todoconsolas.com/es/11-gaming?q=Categor%C3%ADas-Juegos+Xbox+One"
+                                    role="link" aria-label="#" class="tc-header--nav-link">
+                                    <p>Xbox One X</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <article class="items-list">
