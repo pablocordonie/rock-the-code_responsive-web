@@ -1,11 +1,86 @@
-html { 
-    box-sizing: border-box; 
+:root {
+    --tc-color-brand: #353535;
+
+    /* COLOR PALETTE */
+
+    --tc-color-n-000: #ffffff;
+    --tc-color-n-050: #f5f5f5;
+    --tc-color-n-100: #9e9e9e;
+    --tc-color-n-300: #7a7a7a;
+    --tc-color-n-500: #3c3d3d;
+    --tc-color-n-700: #0056da;
+    --tc-color-n-900: #000000;
+
+    /* BACKGROUND COLOR */
+  
+    --tc-color-background-primary  : var(--tc-color-n-000);
+    --tc-color-background-secondary: var(--tc-color-n-300);
+    --tc-color-background-tertiary: var(--tc-color-n-700);
+
+    /* BORDER COLOR */
+
+    --tc-color-border-primary  : var(--tc-color-n-100);
+    --tc-color-border-secondary: var(--tc-color-n-700);
+    --tc-color-border-tertiary: var(--tc-color-n-900);
+
+    /* TYPOGRAPHY COLOR */
+
+    --tc-color-typography-gray   : var(--tc-color-n-100);
+    --tc-color-typography-blue   : var(--tc-color-n-700);
+    --tc-color-typography-black : var(--tc-color-n-900);
+
+    --tc-typography-typeface: "Roboto", sans-serif;
+
+    /* FONT SIZE */
+
+    --rc-typography-h1: 5.9375rem;
+    --rc-typography-h2: 3.5625rem;
+    --rc-typography-h3: 1.25rem;
+    --rc-typography-p : 1rem;
+    --rc-typography-s : .8125rem;
+
+    /* LEADING */
+
+    --rc-typography-h1-leading: 1.2;
+    --rc-typography-h2-leading: 1.2;
+    --rc-typography-p-leading : 1.5;
+
+    /* MARGIN */
+
+    --rc-typography-margin-heading: 0.75rem;
+    --rc-typography-margin-body   : 1.125rem;
+
+    --rc-layout-container: 1.25rem;
+    --rc-layout-grid     : 3.625rem;
+    --rc-layout-gutter   : 1rem;
+
+    /* GAP */
+  
+    --rc-gap-header     : 1rem;
+    --rc-gap-cta        : .75rem;
+    --rc-gap-hero       : 2rem;
+    --rc-gap-customer   : 2rem;
+    --rc-gap-feature    : 2rem;
+    --rc-gap-card       : 1.25rem;
+    --rc-gap-pricing    : 2rem;
+    --rc-gap-testimonial: 3rem;
+
+    /* BORDER RADIUS */
+  
+    --rc-radius-avatar: 5rem;
+    --rc-radius-button: 5rem;
+    --rc-radius-card  : .5rem;
 }
 
-*,
-*:before,
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*:before, 
 *:after { 
-    box-sizing: inherit; 
+    box-sizing: inherit;
+    margin: 0;
 }
 
 a {
