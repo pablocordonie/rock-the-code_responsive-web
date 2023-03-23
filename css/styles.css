@@ -89,12 +89,63 @@ body {
     font-family: var(--tc-typography-typeface);
     font-size: var(--tc-typography-p);
     font-weight: 600;
-    line-height: var(--tc-typography-p-leading);
     margin: 0 auto;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-  }
+}
 
 a {
     text-decoration: none
 }
+
+main img {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.tc-layout-container {
+    padding-left: var(--tc-layout-container);
+    padding-right: var(--tc-layout-container);
+}
+
+.tc-layout-flex { display: flex; }
+.tc-layout-grid { display: grid; }
+
+.tc-header .tc-header-layout {
+    flex-direction: column;
+}
+
+.tc-header .tc-header-layout .tc-header-menu-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tc-header .tc-header-layout .tc-header-navbar-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tc-header-menu-container > .tc-header--title {
+    display: none;
+}
+
+.tc-header-menu-container > .tc-header-menu--logo-link > .tc-header-menu--logo-img {
+    width: 100%;
+}
+
+.tc-header-menu-container > .tc-header--login-container .tc-header--login-link {
+    flex-direction: row;
+    align-items: center;
+}
+
+.tc-main .tc-layout-flex,
+.tc-layout-grid {
+    align-items: center;
+    justify-content: center;
+  }
