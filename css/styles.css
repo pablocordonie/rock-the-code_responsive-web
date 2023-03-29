@@ -1,5 +1,4 @@
 :root {
-    --tc-color-brand: #353535;
 
     /* COLOR PALETTE */
 
@@ -81,6 +80,7 @@ html {
 *:before, 
 *:after { 
     box-sizing: inherit;
+    margin: 0;
 }
 
 body {
@@ -89,14 +89,9 @@ body {
     font-family: var(--tc-typography-typeface);
     font-size: var(--tc-typography-p);
     font-weight: 600;
-    margin: 0 auto;
     max-width: 100%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-}
-
-ul, p {
-    margin: inherit;
 }
 
 a {
@@ -122,7 +117,7 @@ main img {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 0.5rem;
+    margin: 1rem 0;
 }
 
 .tc-header-menu-container > .tc-header--title {
@@ -140,11 +135,13 @@ main img {
 
 .tc-header .tc-header-navbar-container {
     background-color: var(--tc-color-n-100);
-    height: 2rem;
-    padding-top: 0.1rem;
+    height: 3rem;
+    margin-bottom: 2rem;
 }
 
 .tc-header-navbar-container > .tc-header-navbar--list {
+    align-items: center;
+    height: inherit;
     list-style: none;
     padding-left: 0;
 }
