@@ -190,6 +190,10 @@ main img {
     text-transform: uppercase;
 }
 
+.tc-main section ul > li {
+    margin-bottom: 1rem;
+}
+
 .tc-main section p {
     text-align: center;
 }
