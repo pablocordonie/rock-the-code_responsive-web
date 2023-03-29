@@ -85,13 +85,21 @@ html {
 
 body {
     background-color: var(--tc-color-background-primary);
-    color: var(--tc-color-typography-gray);
     font-family: var(--tc-typography-typeface);
     font-size: var(--tc-typography-p);
     font-weight: 600;
     max-width: 100%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--tc-color-typography-gray);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 a {
@@ -142,7 +150,6 @@ main img {
 .tc-header-navbar-container > .tc-header-navbar--list {
     align-items: center;
     height: inherit;
-    list-style: none;
     padding-left: 0;
 }
 
@@ -161,13 +168,28 @@ main img {
     text-transform: uppercase;
 }
 
-.tc-main .tc-layout-flex,
-.tc-layout-grid {
+.tc-main .tc-layout-flex {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
+
+/* FALTA POR AÑADIR LAS PROPS DEL LAYOUT-GRID CUANDO HAYAN MEDIA QUERIES */
 
 .tc-layout-container {
     padding-left: var(--tc-layout-container);
     padding-right: var(--tc-layout-container);
+}
+
+.tc-main section {
+    margin-bottom: 2rem;
+}
+
+.tc-main section > h3 {
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tc-main section p {
+    text-align: center;
 }
