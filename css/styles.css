@@ -24,6 +24,7 @@
 
     /* TYPOGRAPHY COLOR */
 
+    --tc-color-typography-white: var(--tc-color-n-000);
     --tc-color-typography-gray: var(--tc-color-n-500);
     --tc-color-typography-blue: var(--tc-color-n-700);
     --tc-color-typography-black: var(--tc-color-n-900);
@@ -47,7 +48,7 @@
 
     /* MARGIN */
 
-    --tc-typography-margin-heading: 2rem;
+    --tc-typography-margin-heading: 1.5rem;
     --tc-typography-margin-body: 1rem;
 
     --tc-layout-container: 1.25rem;
@@ -130,6 +131,21 @@ main img {
   height: 15rem;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: var(--tc-typography-margin-body);
+}
+
+main img + p {
+    margin-bottom: var(--tc-typography-margin-body);
+}
+
+main button {
+    border: 0.1rem solid var(--tc-color-border-tertiary);
+    background-color: var(--tc-color-background-tertiary);
+    color: var(--tc-color-typography-white);
+    font-weight: 600;
+    margin-bottom: var(--tc-typography-margin-body);
+    padding: 0.5rem;
+    text-transform: uppercase;
 }
 
 .tc-layout-flex { display: flex; }
