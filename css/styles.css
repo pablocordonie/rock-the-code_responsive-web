@@ -47,6 +47,7 @@
 
     --tc-typography-margin-wide: 3rem;
     --tc-typography-margin-body: 2rem;
+    --tc-typography-margin-listitem: 1rem;
     --tc-typography-margin-img: 0.5rem;
 
     --tc-layout-container: 1.25rem;
@@ -143,6 +144,7 @@ main div > p + a {
     border: 0.1rem solid var(--tc-color-border-tertiary);
     background-color: var(--tc-color-background-tertiary);
     display: inline-block;
+    margin-bottom: var(--tc-typography-margin-listitem);
     margin-left: auto;
     margin-right: auto;
     padding: 0.5rem;
@@ -224,4 +226,9 @@ main div > p + a > p {
 .tc-main section ul > li {
     margin-bottom: var(--tc-typography-margin-wide);
     text-align: center;
+}
+
+.tc-main section ul > li > div {
+    outline: 0.1rem solid var(--tc-color-border-secondary);
+    width: 16rem;
 }
