@@ -158,6 +158,16 @@ main div > p + a > p {
     color: var(--tc-color-typography-white);
 }
 
+footer {
+    background-color: var(--tc-color-background-tertiary);
+    border-top: 0.1rem solid var(--tc-color-border-tertiary);
+    height: 5rem;
+}
+
+footer p > small {
+    color: var(--tc-color-typography-white);
+}
+
 .tc-layout-flex { display: flex; }
 .tc-layout-grid { display: grid; }
 
@@ -231,4 +241,14 @@ main div > p + a > p {
 .tc-main section ul > li > div {
     outline: 0.1rem solid var(--tc-color-border-secondary);
     width: 16rem;
+}
+
+.tc-footer .tc-footer-layout {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tc-footer .tc-footer--social_webs {
+    display: flex;
+    gap: 1rem;
 }
