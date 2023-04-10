@@ -98,6 +98,8 @@ h3 {
     font-size: var(--tc-typography-h3);
     line-height: var(--tc-typography-title-leading);
     margin-bottom: var(--tc-typography-margin-body);
+    text-align: center;
+    text-transform: uppercase;
 }
 
 ul {
@@ -136,11 +138,11 @@ main img + p {
     margin-bottom: var(--tc-typography-margin-body);
 }
 
+/* Each anchor 'Consultar' */
 main div > p + div {
     border: 0.1rem solid var(--tc-color-border-tertiary);
     background-color: var(--tc-color-background-tertiary);
     display: inline-block;
-    font-weight: 600;
     margin-left: auto;
     margin-right: auto;
     padding: 0.5rem;
@@ -165,7 +167,8 @@ main div > p + div > a {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.25rem;
 }
 
 .tc-header-menu-container > .tc-header--title {
@@ -184,7 +187,6 @@ main div > p + div > a {
 .tc-header .tc-header-navbar-container {
     background-color: var(--tc-color-n-100);
     height: 3rem;
-    margin-bottom: 2rem;
 }
 
 .tc-header-navbar-container > .tc-header-navbar--list {
@@ -193,12 +195,6 @@ main div > p + div > a {
     padding-left: 0;
 }
 
-/* EL HOVER NO FUNCIONA CORRECTAMENTE EN TOUCHSCREENS, MEJOR DEJARLO PARA LAS MEDIA QUERIES PARA TABLET Y DESKTOP 
-
-.tc-header-navbar--list-item > .tc-header--nav-link:hover {
-    background-color: var(--tc-color-n-050);
-}
-*/
 .tc-header-navbar--list-item > .tc-header--nav-link p {
     font-size: 0.75rem;
     height: 2rem;
@@ -215,17 +211,14 @@ main div > p + div > a {
 /* FALTA POR AÑADIR LAS PROPS DEL LAYOUT-GRID CUANDO HAYAN MEDIA QUERIES */
 
 .tc-layout-container {
+    margin-top: var(--tc-typography-margin-body);
+    margin-bottom: var(--tc-typography-margin-body);
     padding-left: var(--tc-layout-container);
     padding-right: var(--tc-layout-container);
 }
 
 .tc-main section {
     margin-bottom: var(--tc-typography-margin-heading);
-}
-
-.tc-main section > h3 {
-    text-align: center;
-    text-transform: uppercase;
 }
 
 .tc-main section ul > li {
