@@ -139,7 +139,7 @@ main img + p {
 }
 
 /* Each anchor 'Consultar' */
-main div > p + div {
+main div > p + a {
     border: 0.1rem solid var(--tc-color-border-tertiary);
     background-color: var(--tc-color-background-tertiary);
     display: inline-block;
@@ -148,11 +148,11 @@ main div > p + div {
     padding: 0.5rem;
     text-align: center;
     text-transform: uppercase;
-    width: 50%;
-    height: 50%;
+    width: 8rem;
+    height: 2.5rem;
 }
 
-main div > p + div > a {
+main div > p + a > p {
     color: var(--tc-color-typography-white);
 }
 
