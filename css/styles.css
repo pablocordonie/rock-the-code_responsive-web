@@ -204,8 +204,10 @@ footer p > small {
 
 .tc-header-navbar-container > .tc-header-navbar--list {
     align-items: center;
+    gap: 0.5rem;
     height: inherit;
     padding-left: 0;
+
 }
 
 .tc-header-navbar--list-item > .tc-header--nav-link p {
