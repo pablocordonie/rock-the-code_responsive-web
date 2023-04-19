@@ -113,6 +113,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 span {
     padding-left: 0.25rem;
 }
@@ -131,32 +135,7 @@ main img {
   display: block;
   width: 15rem;
   height: 15rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: var(--tc-typography-margin-img);
-}
-
-main img + p {
-    margin-bottom: var(--tc-typography-margin-body);
-}
-
-/* Each anchor 'Consultar' */
-main div > p + a {
-    border: 0.1rem solid var(--tc-color-border-tertiary);
-    background-color: var(--tc-color-background-tertiary);
-    display: inline-block;
-    margin-bottom: var(--tc-typography-margin-listitem);
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    width: 8rem;
-    height: 2.5rem;
-}
-
-main div > p + a > p {
-    color: var(--tc-color-typography-white);
+  margin: var(--tc-typography-margin-listitem);
 }
 
 footer {
@@ -241,6 +220,7 @@ footer p > small {
 .tc-main section ul > li > div {
     outline: 0.1rem solid var(--tc-color-border-secondary);
     width: 16rem;
+    height: 18rem;
 }
 
 .tc-footer .tc-footer-layout {
