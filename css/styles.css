@@ -149,7 +149,6 @@ footer p > small {
 }
 
 .tc-layout-flex { display: flex; }
-.tc-layout-grid { display: grid; }
 
 .tc-header .tc-header-layout {
     flex-direction: column;
@@ -233,7 +232,13 @@ footer p > small {
     gap: 1rem;
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 408px) and (max-width: 768px) {
+
+    main img {
+        width: 9rem;
+        height: 10rem;
+    }
+
     .tc-header .tc-header-menu-container {
         justify-content: space-around;
     }
@@ -241,9 +246,36 @@ footer p > small {
     .tc-header-navbar-container > .tc-header-navbar--list {
         justify-content: space-around;
     }
+
+    .tc-main .tc-layout-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+
+    .tc-main section ul > li > div {
+        width: 11rem;
+        height: 15rem;
+    }
+
+    .tc-main section ul > li > div p {
+        font-size: 0.85rem;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    main img {
+        width: 9rem;
+        height: 10rem;
+    }
+
     .tc-header .tc-header-menu-container {
         justify-content: space-around;
     }
@@ -253,6 +285,58 @@ footer p > small {
     }
 
     .tc-header-navbar--list-item > .tc-header--nav-link p {
+        font-size: 1rem;
+    }
+
+    .tc-main .tc-layout-flex {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+
+    .tc-main section ul > li > div {
+        width: 11rem;
+        height: 15rem;
+    }
+
+    .tc-main section ul > li > div p {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (min-width: 975px) {
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    main img {
+        width: 12rem;
+        height: 13rem;
+    }
+
+    .tc-header .tc-header-menu-container {
+        justify-content: space-around;
+    }
+
+    .tc-header-navbar-container > .tc-header-navbar--list {
+        justify-content: space-around;
+    }
+
+    .tc-header-navbar--list-item > .tc-header--nav-link p {
+        font-size: 1rem;
+    }
+
+    .tc-main .tc-layout-flex {
+        justify-content: space-evenly;
+    }
+
+    .tc-main section ul > li > div {
+        width: 14rem;
+        height: 18rem;
+    }
+
+    .tc-main section ul > li > div p {
         font-size: 1rem;
     }
 }
