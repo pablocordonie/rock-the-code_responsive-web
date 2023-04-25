@@ -133,8 +133,8 @@ small {
 
 main img {
   display: block;
-  width: 15rem;
-  height: 15rem;
+  width: 16rem;
+  height: 16rem;
   margin: var(--tc-typography-margin-listitem);
 }
 
@@ -219,8 +219,8 @@ footer p > small {
 
 .tc-main section ul > li > div {
     outline: 0.1rem solid var(--tc-color-border-secondary);
-    width: 16rem;
-    height: 18rem;
+    width: 18rem;
+    height: 20rem;
 }
 
 .tc-footer .tc-footer-layout {
