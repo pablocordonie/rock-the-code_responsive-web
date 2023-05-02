@@ -51,8 +51,6 @@
     --tc-typography-margin-img: 0.5rem;
 
     --tc-layout-container: 1.25rem;
-    --tc-layout-grid: 3.625rem;
-    --tc-layout-gutter: 1rem;
 
     /* GAP */
   
@@ -168,6 +166,11 @@ footer p > small {
 
 .tc-header-menu-container > .tc-header-menu--logo-link > .tc-header-menu--logo-img {
     width: 100%;
+}
+
+.tc-header--login-container .tc-header--login-image {
+    width: 4rem;
+    height: 4rem;
 }
 
 .tc-header-menu-container > .tc-header--login-container .tc-header--login-link {
