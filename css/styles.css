@@ -169,8 +169,8 @@ footer p > small {
 }
 
 .tc-header--login-container .tc-header--login-image {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .tc-header-menu-container > .tc-header--login-container .tc-header--login-link {
@@ -281,6 +281,11 @@ footer p > small {
 
     .tc-header .tc-header-menu-container {
         justify-content: space-around;
+    }
+
+    .tc-header--login-container .tc-header--login-image {
+        width: 4rem;
+        height: 4rem;
     }
 
     .tc-header-navbar-container > .tc-header-navbar--list {
