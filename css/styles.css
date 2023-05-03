@@ -34,7 +34,9 @@
     --tc-typography-title-min: 1.125rem;
 
     --tc-typography-p: 1rem;
-    --tc-typography-s: 0.8rem;
+    --tc-typography-p-medium: 0.85rem;
+    --tc-typography-p-min: 0.75rem;
+    --tc-typography-s: 0.75rem;
 
     /* LEADING */
 
@@ -43,6 +45,8 @@
 
     /* WIDTH */
 
+    --tc-width-login-mobile: 3rem;
+    --tc-width-login-desktop: 4rem;
     --tc-width-card-mobile: 18rem;
     --tc-width-card-desktop-min: 11rem;
     --tc-width-card-desktop-max: 14rem;
@@ -52,12 +56,16 @@
 
     /* HEIGHT */
 
+    --tc-height-login-mobile: 3rem;
+    --tc-height-login-desktop: 4rem;
+    --tc-height-navbar: 3.5rem;
     --tc-height-card-mobile: 20rem;
     --tc-height-card-desktop-min: 15rem;
     --tc-height-card-desktop-max: 18rem;
     --tc-height-img-mobile: 16rem;
     --tc-height-img-desktop-min: 9rem;
     --tc-height-img-desktop-max: 12rem;
+    --tc-height-footer: 5rem;
 
     /* MARGIN */
 
@@ -74,14 +82,8 @@
 
     /* GAP */
   
-    --tc-gap-header: 1rem;
-    --tc-gap-cta: .75rem;
-    --tc-gap-hero: 2rem;
-    --tc-gap-customer: 2rem;
-    --tc-gap-feature: 2rem;
-    --tc-gap-card: 1.25rem;
-    --tc-gap-pricing: 2rem;
-    --tc-gap-testimonial: 3rem;
+    --tc-flex-gap: 1rem;
+    --tc-flex-gap-half: 0.5rem;
 
 }
 
@@ -149,7 +151,7 @@ main img {
 footer {
     background-color: var(--tc-color-background-secondary);
     border-top: 0.1rem solid var(--tc-color-border-secondary);
-    height: 5rem;
+    height: var(--tc-height-footer);
 }
 
 .tc-layout-flex { display: flex; }
@@ -161,7 +163,7 @@ footer {
 .tc-header .tc-header-menu-container {
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: var(--tc-flex-gap);
     margin-bottom: var(--tc-typography-margin-half);
     margin-top: var(--tc-typography-margin-quarter);
 }
@@ -175,8 +177,8 @@ footer {
 }
 
 .tc-header--login-container .tc-header--login-image {
-    width: 3rem;
-    height: 3rem;
+    width: var(--tc-width-login-mobile);
+    height: var(--tc-height-login-mobile);
 }
 
 .tc-header-menu-container > .tc-header--login-container .tc-header--login-link {
@@ -186,17 +188,17 @@ footer {
 
 .tc-header .tc-header-navbar-container {
     background-color: var(--tc-color-typography-lightgray);
-    height: 3.5rem;
+    height: var(--tc-height-navbar);
 }
 
 .tc-header-navbar-container > .tc-header-navbar--list {
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--tc-flex-gap-half);
     height: inherit;
 }
 
 .tc-header-navbar--list-item > .tc-header--nav-link p {
-    font-size: 0.75rem;
+    font-size: var(--tc-typography-p-min);
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -232,7 +234,7 @@ footer {
 
 .tc-footer .tc-footer--social_webs {
     display: flex;
-    gap: 1rem;
+    gap: var(--tc-flex-gap);
 }
 
 @media (min-width: 408px) and (max-width: 768px) {
@@ -254,7 +256,7 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        gap: 1rem;
+        gap: var(--tc-flex-gap);
     }
 
     .tc-main section ul > li > div {
@@ -263,7 +265,7 @@ footer {
     }
 
     .tc-main section ul > li > div p {
-        font-size: 0.85rem;
+        font-size: var(--tc-typography-p-medium);
     }
 
 }
@@ -284,8 +286,8 @@ footer {
     }
 
     .tc-header--login-container .tc-header--login-image {
-        width: 4rem;
-        height: 4rem;
+        width: var(--tc-width-login-desktop);
+        height: var(--tc-height-login-desktop);
     }
 
     .tc-header-navbar-container > .tc-header-navbar--list {
@@ -293,13 +295,13 @@ footer {
     }
 
     .tc-header-navbar--list-item > .tc-header--nav-link p {
-        font-size: 1rem;
+        font-size: var(--tc-typography-p);
     }
 
     .tc-main .tc-layout-flex {
         flex-direction: row;
         justify-content: space-evenly;
-        gap: 1rem;
+        gap: var(--tc-flex-gap);
     }
 
     .tc-main section ul > li > div {
@@ -308,7 +310,7 @@ footer {
     }
 
     .tc-main section ul > li > div p {
-        font-size: 0.85rem;
+        font-size: var(--tc-typography-p-medium);
     }
 }
 
@@ -332,7 +334,7 @@ footer {
     }
 
     .tc-header-navbar--list-item > .tc-header--nav-link p {
-        font-size: 1rem;
+        font-size: var(--tc-typography-p);
     }
 
     .tc-main .tc-layout-flex {
@@ -345,6 +347,6 @@ footer {
     }
 
     .tc-main section ul > li > div p {
-        font-size: 1rem;
+        font-size: var(--tc-typography-p);
     }
 }
