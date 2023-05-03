@@ -258,8 +258,8 @@ footer {
     }
 
     .tc-main section ul > li > div {
-        width: 11rem;
-        height: 15rem;
+        width: var(--tc-width-card-desktop-min);
+        height: var(--tc-height-card-desktop-min);
     }
 
     .tc-main section ul > li > div p {
