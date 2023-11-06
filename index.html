@@ -1,337 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- META -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="TodoConsolas.com" content="Made with HTML & CSS">
-    <meta name="author" content="Pablo Cordonié">
-    <meta name="description"
-        content="Company specialized in sales of new &second-hand products of all kinds: consoles, mobiles, electronics, tools, watches, videogames, comics and much more.">
-    <meta name="referrer" content="unsafe-url">
-    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="TodoConsolas.com" content="Made with HTML & CSS" />
+    <meta name="author" content="Pablo Cordonié" />
+    <meta
+      name="description"
+      content="Company specialized in sales of new &second-hand products of all kinds: consoles, mobiles, electronics, tools, watches, videogames, comics and much more."
+    />
+    <meta name="referrer" content="unsafe-url" />
+    <meta name="robots" content="index, follow" />
     <!-- TO-DO -> SPEED CONNECTIONS IF NECESSARY -->
     <!-- LINKS -->
-    <link rel="icon" type="image/x-icon" href="https://www.todoconsolas.com/img/favicon.ico?1582897196">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.todoconsolas.com/img/favicon.ico?1582897196"
+    />
     <!-- PERFORMANCE // TO-DO -> GOOGLE FONTS CONNECTIONS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="preload" as="style" href="css/normalize.css">
-    <link rel="preload" as="style" href="css/styles.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="style" href="css/normalize.css" />
+    <link rel="preload" as="style" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- TITLE -->
     <title>TodoConsolas.com</title>
-</head>
-
-<body>
+  </head>
+  <body>
     <header class="tc-header">
-        <div class="tc-header-layout tc-layout-flex">
-            <div class="tc-header-menu-container tc-layout-flex">
-                <a href="https://www.todoconsolas.com/es/" role="link" aria-label="Ir a Todoconsolas.com"
-                    class="tc-header-menu--logo-link">
-                    <img role="img" aria-label="#" class="tc-header-menu--logo-img"
-                        src="https://www.todoconsolas.com/img/todoconsolas-logo-1582897196.jpg" alt="TodoConsolas">
-                </a>
-                <div class="tc-header--login-container">
-                    <a href="https://www.todoconsolas.com/es/iniciar-sesion?back=my-account" role="log"
-                        aria-label="Entra o regístrate en el perfil de Todoconsolas.com"
-                        class="tc-header--login-link tc-layout-flex">
-                        <img class="tc-header--login-image"
-                            src="https://icones.pro/wp-content/uploads/2021/02/icone-utilisateur-bleu.png"
-                            alt="Non-logged User">
-                        <span class="tc-header--login-text">
-                            <p>Entra o regístrate</p>
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <nav role="navigation" aria-label="#" class="tc-header-navbar-container">
-                <ul role="list" aria-label="#" class="tc-header-navbar--list tc-layout-flex">
-                    <li role="listitem" aria-label="#" class="tc-header-navbar--list-item">
-                        <a href="https://www.todoconsolas.com/es/11-gaming?q=Categor%C3%ADas-Juegos+PS5" role="link"
-                            aria-label="Juegos de PlayStation 5" class="tc-header--nav-link">
-                            <p class="tc-header--nav-ps5_link">PlayStation 5</p>
-                        </a>
-                    </li>
-                    <li role="listitem" aria-label="#" class="tc-header-navbar--list-item">
-                        <a href="https://www.todoconsolas.com/es/11-gaming?q=Categor%C3%ADas-Juegos+Xbox+X" role="link"
-                            aria-label="Juegos de Xbox Series X y Xbox Series S" class="tc-header--nav-link">
-                            <p class="tc-header--nav-xboxseries_link">Xbox Series</p>
-                        </a>
-                    </li>
-                    <li role="listitem" aria-label="#" class="tc-header-navbar--list-item">
-                        <a href="https://www.todoconsolas.com/es/11-gaming?q=Categor%C3%ADas-Juegos+Switch" role="link"
-                            aria-label="Juegos de Nintendo Switch" class="tc-header--nav-link">
-                            <p class="tc-header--nav-switch_link">Nintendo Switch</p>
-                        </a>
-                    </li>
-                    <li role="listitem" aria-label="#" class="tc-header-navbar--list-item">
-                        <a href="https://www.todoconsolas.com/es/11-gaming?q=Categor%C3%ADas-Juegos+PS4" role="link"
-                            aria-label="Juegos de PlayStation 4" class="tc-header--nav-link">
-                            <p class="tc-header--nav-ps4_link">PlayStation 4</p>
-                        </a>
-                    </li>
-                    <li role="listitem" aria-label="#" class="tc-header-navbar--list-item">
-                        <a href="https://www.todoconsolas.com/es/11-gaming?q=Categor%C3%ADas-Juegos+Xbox+One"
-                            role="link" aria-label="Juegos de Xbox One" class="tc-header--nav-link">
-                            <p class="tc-header--nav-xboxone_link">Xbox One</p>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+      <div class="tc-header--menu tc-layout-flex">
+        <a
+          href="https://www.todoconsolas.com/es/"
+          target="_blank"
+          role="link"
+          aria-label="Ir a Todoconsolas.com"
+          class="tc-header--menu-logo-link"
+        >
+          <img
+            role="img"
+            aria-label="Logo de Todoconsolas.com"
+            class="tc-header--menu-logo-img"
+            src="https://www.todoconsolas.com/img/todoconsolas-logo-1582897196.jpg"
+            alt="TodoConsolas"
+          />
+        </a>
+        <div class="tc-header--menu-login">
+          <a
+            href="https://www.todoconsolas.com/es/iniciar-sesion?back=my-account"
+            target="_blank"
+            role="log"
+            aria-label="Entra o regístrate en el perfil de Todoconsolas.com"
+            class="tc-header--menu-login-link tc-layout-flex"
+          >
+            <img
+              class="tc-header--menu-login-img"
+              src="https://icones.pro/wp-content/uploads/2021/02/icone-utilisateur-bleu.png"
+              alt="Imagen de usuario no registrado"
+            />
+            <span class="tc-header--menu-login-text">Entra o regístrate</span>
+          </a>
         </div>
-        </div>
+      </div>
+      <nav role="navigation" aria-label="#" class="tc-header--navbar">
+        <ul
+          role="list"
+          aria-label="#"
+          class="tc-header--navbar-list tc-layout-flex"
+        >
+          <li
+            role="listitem"
+            aria-label="#"
+            class="tc-header--navbar-item tc-layout-flex"
+          >
+            <a
+              href="https://www.todoconsolas.com/es/11-gaming?q=Categor%C3%ADas-Juegos+PS5"
+              target="_blank"
+              role="link"
+              aria-label="Juegos de PlayStation 5"
+              class="tc-header--navbar-link"
+            >
+              <p>PS5</p>
+            </a>
+          </li>
+          <li
+            role="listitem"
+            aria-label="#"
+            class="tc-header--navbar-item tc-layout-flex"
+          >
+            <a
+              href="https://www.todoconsolas.com/11-gaming?q=Categor%C3%ADas-Juegos+Xbox+Series"
+              target="_blank"
+              role="link"
+              aria-label="Juegos de Xbox Series X y Xbox Series S"
+              class="tc-header--navbar-link"
+            >
+              <p>XSeries</p>
+            </a>
+          </li>
+          <li
+            role="listitem"
+            aria-label="#"
+            class="tc-header--navbar-item tc-layout-flex"
+          >
+            <a
+              href="https://www.todoconsolas.com/es/11-gaming?q=Categor%C3%ADas-Juegos+Switch"
+              target="_blank"
+              role="link"
+              aria-label="Juegos de Nintendo Switch"
+              class="tc-header--navbar-link"
+            >
+              <p>Switch</p>
+            </a>
+          </li>
+          <li
+            role="listitem"
+            aria-label="#"
+            class="tc-header--navbar-item tc-layout-flex"
+          >
+            <a
+              href="https://www.todoconsolas.com/es/11-gaming?q=Categor%C3%ADas-Juegos+PS4"
+              target="_blank"
+              role="link"
+              aria-label="Juegos de PlayStation 4"
+              class="tc-header--navbar-link"
+            >
+              <p>PS4</p>
+            </a>
+          </li>
+          <li
+            role="listitem"
+            aria-label="#"
+            class="tc-header--navbar-item tc-layout-flex"
+          >
+            <a
+              href="https://www.todoconsolas.com/es/11-gaming?q=Categor%C3%ADas-Juegos+Xbox+One"
+              target="_blank"
+              role="link"
+              aria-label="Juegos de Xbox One"
+              class="tc-header--navbar-link"
+            >
+              <p>XOne</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <main class="tc-main">
-        <div class="tc-layout-container">
-            <article class="tc-main-layout">
-                <section class="tc-main--news-container">
-                    <h1 class="tc-main--news-title">Novedades</h1>
-                    <ul class="tc-main--news-list tc-layout-flex">
-                        <li class="tc-main--news-item">
-                            <div class="tc-main--products-ps5-hogwarts_legacy">
-                                <img class="tc-main--products-ps5-hogwarts_legacy-image"
-                                    src="https://www.todoconsolas.com/178866-medium_default/star_wars_jedi_survivor_ps5_sp_167773.jpg"
-                                    alt="Star Wars Jedi Survivor - PS5" title="Star Wars Jedi Survivor - PS5">
-                                <a href="https://www.todoconsolas.com/es/juegos-ps5/102036-star_wars_jedi_survivor_ps5_sp_167773-5030944124932.html"
-                                    class="tc-main--news-item_1">
-                                    <p>Star Wars Jedi Survivor PS5 (SP)</p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="tc-main--news-item">
-                            <div class="tc-main--products-xboxseries-wild_hearts">
-                                <img class="tc-main--products-xboxseries-resident_evil_4-image"
-                                    src="https://www.todoconsolas.com/163402-medium_default/resident_evil_4_lenticular_edition_xbox_series_sp_156688.jpg"
-                                    alt="Resident Evil 4 - Xbox Series X" title="Resident Evil 4 - Xbox Series X">
-                                <a href="https://www.todoconsolas.com/es/juegos-xbox-x/90560-resident_evil_4_lenticular_edition_xbox_series_sp_156688-5055060903155.html"
-                                    class="tc-main--news-item_2">
-                                    <p>Resident Evil 4 Lenticular Edition - Xbox Series X (SP)</p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="tc-main--news-item">
-                            <div class="tc-main--products-switch-ring_fit_adventure">
-                                <img class="tc-main--products-switch-ring_fit_adventure-image"
-                                    src="https://www.todoconsolas.com/18447-medium_default/ring_fit_adventure_switch_sp_107990.jpg"
-                                    alt="Ring Fit Adventure - Switch" title="Ring Fit Adventure - Switch">
-                                <a href="https://www.todoconsolas.com/es/juegos-switch/14080-ring_fit_adventure_switch_sp_107990-045496424169.html"
-                                    class="tc-main--news-item_3">
-                                    <p>Ring Fit Adventure - Switch (SP)</p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="tc-main--news-item">
-                            <div class="tc-main--products-ps4-call_duty_mwii">
-                                <img class="tc-main--products-ps4-call_duty_mwii-image"
-                                    src="https://www.todoconsolas.com/164083-medium_default/call_of_duty__modern_warfare_ii_ps4_sp_po144420.jpg"
-                                    alt="Call Of Duty Modern Warfare II - PS4"
-                                    title="Call Of Duty Modern Warfare II - PS4">
-                                <a href="https://www.todoconsolas.com/es/juegos-ps4/99100-call_of_duty__modern_warfare_ii_ps4_sp_po144420-5030917296901.html"
-                                    class="tc-main--news-item_4">
-                                    <p>Call Of Duty Modern Warfare II - PS4 (SP)</p>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-                <section class="tc-main--secondhand_news-container">
-                    <h3 class="tc-main--secondhand_news-title">Novedades - Segunda Mano</h3>
-                    <ul class="tc-main--secondhand_news-list tc-layout-flex">
-                        <li class="tc-main--secondhand_news-item">
-                            <div class="tc-main--products-ps4-fifa_23">
-                                <img class="tc-main--products-ps4-fifa_23-image"
-                                    src="https://www.todoconsolas.com/146823-medium_default/fifa_23_ps4_sp_157580.jpg"
-                                    alt="FIFA 23 - PS4" title="FIFA 23 - PS4">
-                                <a href="https://www.todoconsolas.com/es/juegos-ps4/91346-fifa_23_ps4_sp_157580-5035226124273.html"
-                                    class="tc-main--secondhand_news_item_1">
-                                    <p>FIFA 23 - PS4 (SP)</p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="tc-main--secondhand_news-item">
-                            <div class="tc-main--products-switch-mario_rabbids_kingdom_battle">
-                                <img class="tc-main--products-switch-mario_rabbids_kingdom_battle-image"
-                                    src="https://www.todoconsolas.com/8235-medium_default/mario___rabbids__kingdom_battle_switch_sp_70616.jpg"
-                                    alt="Mario + Rabbids: Kingdom Battle - Switch"
-                                    title="Mario + Rabbids: Kingdom Battle - Switch">
-                                <a href="https://www.todoconsolas.com/es/juegos-switch/8190-mario___rabbids__kingdom_battle_switch_sp_po58771-3307216024415.html"
-                                    class="tc-main--secondhand_news_item_2">
-                                    <p>Mario + Rabbids: Kingdom Battle - Switch (SP)</p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="tc-main--secondhand_news-item">
-                            <div class="tc-main--products-xboxone-assassins_creed_valhalla">
-                                <img class="tc-main--products-xboxone-assassins_creed_valhalla-image"
-                                    src="https://www.todoconsolas.com/156207-medium_default/assassin_s_creed_valhalla_xbox_one_sp_po105398.jpg"
-                                    alt="Assassin's Creed Valhalla - Xbox One"
-                                    title="Assassin's Creed Valhalla - Xbox One">
-                                <a href="https://www.todoconsolas.com/es/juegos-xbox-one/33044-assassin_s_creed_valhalla_xbox_one_sp_po105398-3307216168201.html"
-                                    class="tc-main--secondhand_news_item_3">
-                                    <p>Assassin's Creed Valhalla - Xbox One (SP)</p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="tc-main--secondhand_news-item">
-                            <div class="tc-main--products-switch-dragonball_xenoverse_2">
-                                <img class="tc-main--products-switch-dragonball_xenoverse_2-image"
-                                    src="https://www.todoconsolas.com/8247-medium_default/dragon_ball__xenoverse_2_switch_sp_po56804.jpg"
-                                    alt="Dragon Ball Xenoverse 2 - Switch" title="Dragon Ball Xenoverse 2 - Switch">
-                                <a href="https://www.todoconsolas.com/es/juegos-switch/8036-dragon_ball__xenoverse_2_switch_sp_po56804-3391891995139.html"
-                                    class="tc-main--secondhand_news_item_4">
-                                    <p>Dragon Ball Xenoverse 2 - Switch (SP)</p>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-                <section class="tc-main--discounts-container">
-                    <h3 class="tc-main--discounts-title">Bajadas de Precio</h3>
-                    <ul class="tc-main--discounts-list tc-layout-flex">
-                        <li class="tc-main--discounts-item">
-                            <div class="tc-main--products-ps5-spiderman_miles_morales_ultimate">
-                                <img class="tc-main--products-ps5-spiderman_miles_morales_ultimate-image"
-                                    src="https://www.todoconsolas.com/127417-medium_default/marvel_s_spider_man__miles_morales_ultimate_ed__sin_dlc_ps5_sp_po105438.jpg"
-                                    alt="Marvel's Spider-Man: Miles Morales Ultimate Edition - PS5"
-                                    title="Marvel's Spider-Man: Miles Morales Ultimate Edition - PS5">
-                                <a href="https://www.todoconsolas.com/es/juegos-ps5/33241-marvel_s_spider_man__miles_morales_ultimate_ed__sin_dlc_ps5_sp_po105438-711719802891.html"
-                                    class="tc-main--discounts_item_1">
-                                    <p>Marvel's Spider-Man: Miles Morales Ultimate Edition (Sin DLC)</p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="tc-main--discounts-item">
-                            <div class="tc-main--products-switch-pokemon_perla_reluciente">
-                                <img class="tc-main--products-switch-pokemon_perla_reluciente-image"
-                                    src="https://www.todoconsolas.com/112488-medium_default/pokemon_perla_reluciente_switch_sp_po124734.jpg"
-                                    alt="Pokémon Perla Reluciente - Switch" title="Pokémon Perla Reluciente - Switch">
-                                <a href="https://www.todoconsolas.com/es/juegos-switch/75804-pokemon_perla_reluciente_switch_sp_po124734-045496428228.html"
-                                    class="tc-main--discounts_item_2">
-                                    <p>Pokémon Perla Reluciente - Switch (SP)</p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="tc-main--discounts-item">
-                            <div class="tc-main--products-xboxone-forza_motorsport_7">
-                                <img class="tc-main--products-xboxone-forza_motorsport_7-image"
-                                    src="https://www.todoconsolas.com/8259-medium_default/forza_motorsport_7_xbox_one_sp_po56855.jpg"
-                                    alt="Forza Motorsport 7 - Xbox One" title="Forza Motorsport 7 - Xbox One">
-                                <a href="https://www.todoconsolas.com/es/juegos-xbox-one/8048-forza_motorsport_7_xbox_one_sp_po56855-889842227994.html"
-                                    class="tc-main--discounts_item_3">
-                                    <p>Forza Motorsport 7 - Xbox One (SP)</p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="tc-main--discounts-item">
-                            <div class="tc-main--products-ps4-the_last_us_parte_ii">
-                                <img class="tc-main--products-ps4-the_last_us_parte_ii-image"
-                                    src="https://www.todoconsolas.com/40713-medium_default/the_last_of_us__parte_ii_ps4_sp_po99277.jpg"
-                                    alt="The Last Of Us: Parte II - PS4" title="The Last Of Us: Parte II - PS4">
-                                <a href="https://www.todoconsolas.com/es/juegos-ps4/26064-the_last_of_us__parte_ii_ps4_sp_po99277-711719330806.html"
-                                    class="tc-main--discounts_item_4">
-                                    <p>The Last Of Us: Parte II - PS4 (SP)</p>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-                <section class="tc-main--secondhand_discounts-container">
-                    <h3 class="tc-main--secondhand_discounts-title">Bajadas de Precio - Segunda Mano</h3>
-                    <ul class="tc-main--secondhand_discounts-list tc-layout-flex">
-                        <li class="tc-main--secondhand_discounts-item">
-                            <div class="tc-main--products-ps4-metal_gear_solid_v_the_phantom_pain">
-                                <img class="tc-main--products-ps4-metal_gear_solid_v_the_phantom_pain-image"
-                                    src="https://www.todoconsolas.com/6061-medium_default/metal_gear_solid_v_the_phantom_pain_ps4_sp_po37251.jpg"
-                                    alt="Metal Gear Solid V The Phantom Pain - PS4"
-                                    title="Metal Gear Solid V The Phantom Pain - PS4">
-                                <a href="https://www.todoconsolas.com/es/juegos-ps4/5981-metal_gear_solid_v_the_phantom_pain_ps4_sp_po37251-4012927100196.html"
-                                    class="tc-main--secondhand_discounts_item_1">
-                                    <p>Metal Gear Solid V The Phantom Pain - PS4 (SP)</p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="tc-main--secondhand_discounts-item">
-                            <div class="tc-main--products-xboxone-biomutant">
-                                <img class="tc-main--products-xboxone-biomutant-image"
-                                    src="https://www.todoconsolas.com/87812-medium_default/biomutant_xbox_one_sp_po115433.jpg"
-                                    alt="Biomutant - Xbox One" title="Biomutant - Xbox One">
-                                <a href="https://www.todoconsolas.com/es/juegos-xbox-one/53300-biomutant_xbox_one_sp_po115433-9120080071354.html"
-                                    class="tc-main--secondhand_discounts_item_2">
-                                    <p>Biomutant - Xbox One (SP)</p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="tc-main--secondhand_discounts-item">
-                            <div class="tc-main--products-ps5-far_cry_6">
-                                <img class="tc-main--products-ps5-far_cry_6-image"
-                                    src="https://www.todoconsolas.com/108170-medium_default/far_cry_6_ps5_sp_po122437.jpg"
-                                    alt="Far Cry 6 - PS5" title="Far Cry 6 - PS5">
-                                <a href="https://www.todoconsolas.com/es/juegos-ps5/73733-far_cry_6_ps5_sp_po122437-3307216186168.html"
-                                    class="tc-main--secondhand_discounts_item_3">
-                                    <p>Far Cry 6 - PS5 (SP)</p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="tc-main--secondhand_discounts-item">
-                            <div class="tc-main--products-switch-doraemon_story_seasons">
-                                <img class="tc-main--products-switch-doraemon_story_seasons-image"
-                                    src="https://www.todoconsolas.com/146551-medium_default/doraemon_story_of_seasons_switch_sp_po92998.jpg"
-                                    alt="Doraemon Story Of Seasons - Switch" title="Doraemon Story Of Seasons - Switch">
-                                <a href="https://www.todoconsolas.com/es/juegos-switch/22631-doraemon_story_of_seasons_switch_sp_po92998-3391892005028.html"
-                                    class="tc-main--secondhand_discounts_item_4">
-                                    <p>Doraemon Story Of Seasons - Switch (SP)</p>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-            </article>
-        </div>
+    <main class="tc-main tc-layout-container">
+      <article class="tc-main-products">
+        <section class="tc-main-products-news">
+          <h1 class="tc-main-products-news-title">Novedades</h1>
+          <ul class="tc-main-products-news-list">
+            <li class="tc-main-products-news-item">
+              <a
+                href="https://www.todoconsolas.com/juegos-ps5/112213-star_wars_jedi_survivor_ps5_sp_po155708-5030944124932.html"
+                class="tc-main--products-news-item-ps5-star_wars_jedi_survivor"
+              >
+                <img
+                  class="tc-main--products-ps5-star_wars_jedi_survivor-image"
+                  src="https://www.todoconsolas.com/178866-medium_default/star_wars_jedi_survivor_ps5_sp_167773.jpg"
+                  alt="Star Wars Jedi Survivor - PS5"
+                  title="Star Wars Jedi Survivor - PS5"
+                />
+                <p>Star Wars Jedi Survivor PS5 (SP)</p>
+              </a>
+            </li>
+            <li class="tc-main-products-news-item">
+              <a
+                href="https://www.todoconsolas.com/es/juegos-xbox-x/90560-resident_evil_4_lenticular_edition_xbox_series_sp_156688-5055060903155.html"
+                class="tc-main--products-news-item-xboxseries-resident_evil_4"
+              >
+                <img
+                  class="tc-main--products-xboxseries-resident_evil_4-image"
+                  src="https://www.todoconsolas.com/163402-medium_default/resident_evil_4_lenticular_edition_xbox_series_sp_156688.jpg"
+                  alt="Resident Evil 4 - Xbox Series X"
+                  title="Resident Evil 4 - Xbox Series X"
+                />
+                <p>Resident Evil 4 Lenticular Edition - Xbox Series X (SP)</p>
+              </a>
+            </li>
+            <li class="tc-main-products-news-item">
+              <a
+                href="https://www.todoconsolas.com/es/juegos-switch/14080-ring_fit_adventure_switch_sp_107990-045496424169.html"
+                class="tc-main--products-news-item-switch-ring_fit_adventure"
+              >
+                <img
+                  class="tc-main--products-switch-ring_fit_adventure-image"
+                  src="https://www.todoconsolas.com/18447-medium_default/ring_fit_adventure_switch_sp_107990.jpg"
+                  alt="Ring Fit Adventure - Switch"
+                  title="Ring Fit Adventure - Switch"
+                />
+                <p>Ring Fit Adventure - Switch (SP)</p>
+              </a>
+            </li>
+            <li class="tc-main-products-news-item">
+              <a
+                href="https://www.todoconsolas.com/es/juegos-ps4/99100-call_of_duty__modern_warfare_ii_ps4_sp_po144420-5030917296901.html"
+                class="tc-main--products-news-item-ps4-call_duty_mwii"
+              >
+                <img
+                  class="tc-main--products-ps4-call_duty_mwii-image"
+                  src="https://www.todoconsolas.com/164083-medium_default/call_of_duty__modern_warfare_ii_ps4_sp_po144420.jpg"
+                  alt="Call Of Duty Modern Warfare II - PS4"
+                  title="Call Of Duty Modern Warfare II - PS4"
+                />
+                <p>Call Of Duty Modern Warfare II - PS4 (SP)</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="tc-main-products-secondhand_news">
+          <h3 class="tc-main-products-secondhand_news-title">
+            Novedades - Segunda Mano
+          </h3>
+          <ul class="tc-main-products-secondhand_news-list tc-layout-flex">
+            <li class="tc-main-products-secondhand_news-item">
+              <a
+                href="https://www.todoconsolas.com/es/juegos-ps4/91346-fifa_23_ps4_sp_157580-5035226124273.html"
+                class="tc-main-products-secondhand_news-item-ps4-fifa_23"
+              >
+                <img
+                  class="tc-main-products-secondhand_news-item-ps4-fifa_23-image"
+                  src="https://www.todoconsolas.com/146823-medium_default/fifa_23_ps4_sp_157580.jpg"
+                  alt="FIFA 23 - PS4"
+                  title="FIFA 23 - PS4"
+                />
+                <p>FIFA 23 - PS4 (SP)</p>
+              </a>
+            </li>
+            <li class="tc-main-products-secondhand_news-item">
+              <a
+                href="https://www.todoconsolas.com/es/juegos-switch/8190-mario___rabbids__kingdom_battle_switch_sp_po58771-3307216024415.html"
+                class="tc-main-products-secondhand_news-item-switch-mario_rabbids_kingdom_battle"
+              >
+                <img
+                  class="tc-main-products-secondhand_news-item-switch-mario_rabbids_kingdom_battle-image"
+                  src="https://www.todoconsolas.com/8235-medium_default/mario___rabbids__kingdom_battle_switch_sp_70616.jpg"
+                  alt="Mario + Rabbids: Kingdom Battle - Switch"
+                  title="Mario + Rabbids: Kingdom Battle - Switch"
+                />
+                <p>Mario + Rabbids: Kingdom Battle - Switch (SP)</p>
+              </a>
+            </li>
+            <li class="tc-main-products-secondhand_news-item">
+              <a
+                href="https://www.todoconsolas.com/es/juegos-xbox-one/33044-assassin_s_creed_valhalla_xbox_one_sp_po105398-3307216168201.html"
+                class="tc-main-products-secondhand_news-item-xboxone-assassins_creed_valhalla"
+              >
+                <img
+                  class="tc-main-products-secondhand_news-item-xboxone-assassins_creed_valhalla-image"
+                  src="https://www.todoconsolas.com/156207-medium_default/assassin_s_creed_valhalla_xbox_one_sp_po105398.jpg"
+                  alt="Assassin's Creed Valhalla - Xbox One"
+                  title="Assassin's Creed Valhalla - Xbox One"
+                />
+                <p>Assassin's Creed Valhalla - Xbox One (SP)</p>
+              </a>
+            </li>
+            <li class="tc-main-products-secondhand_news-item">
+              <a
+                href="https://www.todoconsolas.com/es/juegos-switch/8036-dragon_ball__xenoverse_2_switch_sp_po56804-3391891995139.html"
+                class="tc-main-products-secondhand_news-item-switch-dragonball_xenoverse_2"
+              >
+                <img
+                  class="tc-main-products-secondhand_news-item-switch-dragonball_xenoverse_2-image"
+                  src="https://www.todoconsolas.com/8247-medium_default/dragon_ball__xenoverse_2_switch_sp_po56804.jpg"
+                  alt="Dragon Ball Xenoverse 2 - Switch"
+                  title="Dragon Ball Xenoverse 2 - Switch"
+                />
+                <p>Dragon Ball Xenoverse 2 - Switch (SP)</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="tc-main-products-discounts">
+          <h3 class="tc-main-products-discounts-title">Bajadas de Precio</h3>
+          <ul class="tc-main-products-discounts-list tc-layout-flex">
+            <li class="tc-main-products-discounts-item">
+              <a
+                href="https://www.todoconsolas.com/es/juegos-ps5/33241-marvel_s_spider_man__miles_morales_ultimate_ed__sin_dlc_ps5_sp_po105438-711719802891.html"
+                class="tc-main-products-discounts-item-ps5-spiderman_miles_morales_ultimate"
+              >
+                <img
+                  class="tc-main-products-discounts-item-ps5-spiderman_miles_morales_ultimate-image"
+                  src="https://www.todoconsolas.com/127417-medium_default/marvel_s_spider_man__miles_morales_ultimate_ed__sin_dlc_ps5_sp_po105438.jpg"
+                  alt="Marvel's Spider-Man: Miles Morales Ultimate Edition - PS5"
+                  title="Marvel's Spider-Man: Miles Morales Ultimate Edition - PS5"
+                />
+                <p>
+                  Marvel's Spider-Man: Miles Morales Ultimate Edition (Sin DLC)
+                </p>
+              </a>
+            </li>
+            <li class="tc-main-products-discounts-item">
+              <a
+                href="https://www.todoconsolas.com/es/juegos-switch/75804-pokemon_perla_reluciente_switch_sp_po124734-045496428228.html"
+                class="tc-main-products-discounts-item-switch-pokemon_perla_reluciente"
+              >
+                <img
+                  class="tc-main-products-discounts-item-switch-pokemon_perla_reluciente-image"
+                  src="https://www.todoconsolas.com/112488-medium_default/pokemon_perla_reluciente_switch_sp_po124734.jpg"
+                  alt="Pokémon Perla Reluciente - Switch"
+                  title="Pokémon Perla Reluciente - Switch"
+                />
+                <p>Pokémon Perla Reluciente - Switch (SP)</p>
+              </a>
+            </li>
+            <li class="tc-main-products-discounts-item">
+              <a
+                href="https://www.todoconsolas.com/es/juegos-xbox-one/8048-forza_motorsport_7_xbox_one_sp_po56855-889842227994.html"
+                class="tc-main-products-discounts-item-xboxone-forza_motorsport_7"
+              >
+                <img
+                  class="tc-main-products-discounts-item-xboxone-forza_motorsport_7-image"
+                  src="https://www.todoconsolas.com/8259-medium_default/forza_motorsport_7_xbox_one_sp_po56855.jpg"
+                  alt="Forza Motorsport 7 - Xbox One"
+                  title="Forza Motorsport 7 - Xbox One"
+                />
+                <p>Forza Motorsport 7 - Xbox One (SP)</p>
+              </a>
+            </li>
+            <li class="tc-main-products-discounts-item">
+              <a
+                href="https://www.todoconsolas.com/es/juegos-ps4/26064-the_last_of_us__parte_ii_ps4_sp_po99277-711719330806.html"
+                class="tc-main-products-discounts-item-ps4-the_last_of_us_parte_ii"
+              >
+                <img
+                  class="tc-main-products-discounts-item-ps4-the_last_of_us_parte_ii-image"
+                  src="https://www.todoconsolas.com/40713-medium_default/the_last_of_us__parte_ii_ps4_sp_po99277.jpg"
+                  alt="The Last Of Us: Parte II - PS4"
+                  title="The Last Of Us: Parte II - PS4"
+                />
+                <p>The Last Of Us: Parte II - PS4 (SP)</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="tc-main--secondhand_discounts">
+          <h3 class="tc-main--secondhand_discounts-title">
+            Bajadas de Precio - Segunda Mano
+          </h3>
+          <ul class="tc-main--secondhand_discounts-list tc-layout-flex">
+            <li class="tc-main-products-secondhand_discounts-item">
+              <a
+                href="https://www.todoconsolas.com/es/juegos-ps4/5981-metal_gear_solid_v_the_phantom_pain_ps4_sp_po37251-4012927100196.html"
+                class="tc-main-products-secondhand_discounts-item-ps4-metal_gear_solid_v_the_phantom_pain"
+              >
+                <img
+                  class="tc-main-products-secondhand_discounts-item-ps4-metal_gear_solid_v_the_phantom_pain-image"
+                  src="https://www.todoconsolas.com/6061-medium_default/metal_gear_solid_v_the_phantom_pain_ps4_sp_po37251.jpg"
+                  alt="Metal Gear Solid V The Phantom Pain - PS4"
+                  title="Metal Gear Solid V The Phantom Pain - PS4"
+                />
+                <p>Metal Gear Solid V The Phantom Pain - PS4 (SP)</p>
+              </a>
+            </li>
+            <li class="tc-main-products-secondhand_discounts-item">
+              <a
+                href="https://www.todoconsolas.com/es/juegos-xbox-one/53300-biomutant_xbox_one_sp_po115433-9120080071354.html"
+                class="tc-main-products-secondhand_discounts-item-xboxone-biomutant"
+              >
+                <img
+                  class="tc-main-products-secondhand_discounts-item-xboxone-biomutant-image"
+                  src="https://www.todoconsolas.com/87812-medium_default/biomutant_xbox_one_sp_po115433.jpg"
+                  alt="Biomutant - Xbox One"
+                  title="Biomutant - Xbox One"
+                />
+                <p>Biomutant - Xbox One (SP)</p>
+              </a>
+            </li>
+            <li class="tc-main-products-secondhand_discounts-item">
+              <a
+                href="https://www.todoconsolas.com/es/juegos-ps5/73733-far_cry_6_ps5_sp_po122437-3307216186168.html"
+                class="tc-main-products-secondhand_discounts-item-ps5-far_cry_6"
+              >
+                <img
+                  class="tc-main-products-secondhand_discounts-item-ps5-far_cry_6-image"
+                  src="https://www.todoconsolas.com/108170-medium_default/far_cry_6_ps5_sp_po122437.jpg"
+                  alt="Far Cry 6 - PS5"
+                  title="Far Cry 6 - PS5"
+                />
+                <p>Far Cry 6 - PS5 (SP)</p>
+              </a>
+            </li>
+            <li class="tc-main-products-secondhand_discounts-item">
+              <a
+                href="https://www.todoconsolas.com/es/juegos-switch/22631-doraemon_story_of_seasons_switch_sp_po92998-3391892005028.html"
+                class="tc-main-products-secondhand_discounts-item-switch-doraemon_story_seasons"
+              >
+                <img
+                  class="tc-main-products-secondhand_discounts-item-switch-doraemon_story_seasons-image"
+                  src="https://www.todoconsolas.com/146551-medium_default/doraemon_story_of_seasons_switch_sp_po92998.jpg"
+                  alt="Doraemon Story Of Seasons - Switch"
+                  title="Doraemon Story Of Seasons - Switch"
+                />
+                <p>Doraemon Story Of Seasons - Switch (SP)</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
     </main>
     <footer class="tc-footer">
-        <div class="tc-layout-container">
-            <div class="tc-footer-layout tc-layout-flex">
-                <p class="tc-footer--copyright tc-text-note">
-                    <small>TodoConsolas S.L. &copy; 2004 - 2023</small>
-                </p>
-                <div class="tc-footer--social_webs tc-layout-flex">
-                    <a href="https://twitter.com/todoconsolas" role="link"
-                        aria-label="Ir al perfil de Todoconsolas.com en Twitter" class="tc-footer--logo-twitter">
-                        <svg viewBox="0 0 24 24" height="16" width="16" fill="none" stroke="#AEAEAE"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" role="img" aria-label="#"
-                            class="tc-footer--logo-twitter-icon">
-                            <path
-                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/todoconsolasoficial/" role="link"
-                        aria-label="Ir al perfil de Todoconsolas.com en Instagram" class="tc-footer--logo-instagram">
-                        <svg viewBox="0 0 24 24" height="16" width="16" fill="none" stroke="#AEAEAE"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" role="img" aria-label="#"
-                            class="tc-footer--logo-instagram-icon">
-                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01" />
-                        </svg>
-                    </a>
-                    <a href="https://www.facebook.com/todoconsolas.es" role="link"
-                        aria-label="Ir al perfil de Todoconsolas.com en Facebook" class="tc-footer--logo-facebook">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0"
-                            x="0px" y="0px" width="16" height="16" viewBox="0 0 50 50"
-                            class="tc-footer--logo-facebook-icon">
-                            <path
-                                d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+      <div class="tc-layout-container">
+        <div class="tc-footer-layout tc-layout-flex">
+          <p class="tc-footer-copyright">
+            <small>TodoConsolas S.L. &copy; 2004 - 2023</small>
+          </p>
+          <div class="tc-footer-social_webs tc-layout-flex">
+            <a
+              href="https://twitter.com/todoconsolas"
+              role="link"
+              aria-label="Ir al perfil de Todoconsolas.com en Twitter"
+              class="tc-footer-social_webs-logo-twitter"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                height="16"
+                width="16"
+                fill="none"
+                stroke="#AEAEAE"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                role="img"
+                aria-label="#"
+                class="tc-footer-social_webs-logo-twitter-icon"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/todoconsolasoficial/"
+              role="link"
+              aria-label="Ir al perfil de Todoconsolas.com en Instagram"
+              class="tc-footer-social_webs-logo-instagram"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                height="16"
+                width="16"
+                fill="none"
+                stroke="#AEAEAE"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                role="img"
+                aria-label="#"
+                class="tc-footer-social_webs-logo-instagram-icon"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.facebook.com/todoconsolas.es"
+              role="link"
+              aria-label="Ir al perfil de Todoconsolas.com en Facebook"
+              class="tc-footer-social_webs-logo-facebook"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.0"
+                x="0px"
+                y="0px"
+                width="16"
+                height="16"
+                viewBox="0 0 50 50"
+                class="tc-footer-social_webs-logo-facebook-icon"
+              >
+                <path
+                  d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z"
+                ></path>
+              </svg>
+            </a>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
