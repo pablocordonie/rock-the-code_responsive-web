@@ -2,7 +2,7 @@
   /* COLOR PALETTE */
 
   --tc-color-n-000: #ffffff;
-  --tc-color-n-100: #c9c9c9;
+  --tc-color-n-100: #e0e0e0;
   --tc-color-n-300: #a7a7a7;
   --tc-color-n-400: #646566;
   --tc-color-n-500: #444;
@@ -18,7 +18,8 @@
 
   --tc-color-border-primary: var(--tc-color-n-000);
   --tc-color-border-secondary: var(--tc-color-n-300);
-  --tc-color-border-tertiary: var(--tc-color-n-900);
+  --tc-color-border-tertiary: var(--tc-color-n-100);
+  --tc-color-border-quarternary: var(--tc-color-n-900);
 
   /* TYPOGRAPHY COLOR */
 
@@ -50,10 +51,8 @@
 
   --tc-width-login-mobile: 3rem;
   --tc-width-login-desktop: 4rem;
-  --tc-width-card-mobile: 100%;
   --tc-width-card-desktop-min: 11rem;
   --tc-width-card-desktop-max: 14rem;
-  --tc-width-img-mobile: 100%;
   --tc-width-img-desktop-min: 9rem;
   --tc-width-img-desktop-max: 12rem;
 
@@ -62,10 +61,9 @@
   --tc-height-login-mobile: 3rem;
   --tc-height-login-desktop: 4rem;
   --tc-height-navbar: 3.5rem;
-  --tc-height-card-mobile: 20rem;
   --tc-height-card-desktop-min: 15rem;
   --tc-height-card-desktop-max: 18rem;
-  --tc-height-img-mobile: 16rem;
+  --tc-height-img-mobile: 14rem;
   --tc-height-img-desktop-min: 9rem;
   --tc-height-img-desktop-max: 12rem;
   --tc-height-footer: 8rem;
@@ -89,7 +87,8 @@
 
   /* GAP */
 
-  --tc-flex-gap-x2: 1.5rem;
+  --tc-flex-gap-x2: 2rem;
+  --tc-flex-gap-x1dot5: 1.5rem;
   --tc-flex-gap-x1: 1rem;
   --tc-flex-gap-half: 0.5rem;
 }
@@ -117,7 +116,7 @@ h3 {
   color: var(--tc-color-typography-gray);
   font-size: var(--tc-typography-title-min);
   line-height: var(--tc-typography-title-leading);
-  margin-bottom: var(--tc-margin-x2);
+  margin-bottom: var(--tc-margin-x3);
   text-align: center;
   text-transform: uppercase;
 }
@@ -152,8 +151,7 @@ main p:hover {
 }
 
 main img {
-  width: var(--tc-width-img-mobile);
-  height: var(--tc-height-img-mobile);
+  object-fit: cover;
   padding-top: var(--tc-padding-x1);
 }
 
@@ -163,7 +161,7 @@ main p {
 
 footer {
   background-color: var(--tc-color-background-secondary);
-  border-top: 0.1rem solid var(--tc-color-border-tertiary);
+  border-top: 0.1rem solid var(--tc-color-border-quarternary);
   height: var(--tc-height-footer);
 }
 
@@ -174,7 +172,7 @@ footer {
 .tc-header .tc-header--menu {
   align-items: center;
   justify-content: space-around;
-  gap: var(--tc-flex-gap-x2);
+  gap: var(--tc-flex-gap-x1dot5);
   margin: 0 var(--tc-margin-quarter);
   padding: var(--tc-padding-quarter) 0 var(--tc-padding-half) 0;
 }
@@ -222,28 +220,43 @@ footer {
   text-transform: uppercase;
 }
 
+.tc-layout-container {
+  margin: 0 var(--tc-margin-x1);
+}
+
 .tc-main .tc-layout-flex {
   flex-direction: column;
 }
 
-.tc-layout-container {
-  margin: var(--tc-margin-x2) var(--tc-margin-x1);
+.tc-main--products {
+  margin: var(--tc-margin-x3) 0;
 }
 
-.tc-main--news-list > li {
-  display: flex;
+.tc-main--products > section {
   margin-bottom: var(--tc-margin-x3);
-  text-align: center;
 }
 
-.tc-main section ul > li > div {
-  width: var(--tc-width-card-mobile);
-  height: var(--tc-height-card-mobile);
+.tc-main--products ul {
+  gap: var(--tc-flex-gap-x2);
+}
+
+.tc-main--products ul > li {
+  border: 0.1rem solid var(--tc-color-border-tertiary);
+}
+
+.tc-main--products ul > li > a {
+  gap: var(--tc-flex-gap-x1);
+}
+
+.tc-main--products ul > li > a > p {
+  padding: 0 var(--tc-padding-x1) var(--tc-padding-x1) var(--tc-padding-x1);
+  text-align: center;
 }
 
 .tc-footer .tc-footer-layout {
   flex-direction: column-reverse;
-  gap: var(--tc-flex-gap-x2);
+  gap: var(--tc-flex-gap-x1dot5);
+  padding-top: var(--tc-padding-x2);
 }
 
 .tc-footer .tc-footer-copyright {
@@ -253,7 +266,7 @@ footer {
 .tc-footer .tc-footer-social_webs {
   display: flex;
   align-items: center;
-  gap: var(--tc-flex-gap-x2);
+  gap: var(--tc-flex-gap-x1dot5);
   justify-content: center;
 }
 
@@ -271,7 +284,7 @@ footer {
     justify-content: space-around;
   }
 
-  .tc-main .tc-layout-flex {
+  main .tc-layout-flex {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -316,7 +329,7 @@ footer {
     font-size: var(--tc-typography-p);
   }
 
-  .tc-main .tc-layout-flex {
+  main .tc-layout-flex {
     flex-direction: row;
     justify-content: space-evenly;
     gap: var(--tc-flex-gap-x1);
@@ -351,7 +364,7 @@ footer {
     font-size: var(--tc-typography-p);
   }
 
-  .tc-main .tc-layout-flex {
+  main .tc-layout-flex {
     justify-content: space-evenly;
   }
 
