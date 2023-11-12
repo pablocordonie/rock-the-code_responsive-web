@@ -17,30 +17,29 @@
   /* BORDER COLOR */
 
   --tc-color-border-primary: var(--tc-color-n-000);
-  --tc-color-border-secondary: var(--tc-color-n-300);
-  --tc-color-border-tertiary: var(--tc-color-n-100);
-  --tc-color-border-quarternary: var(--tc-color-n-900);
+  --tc-color-border-secondary: var(--tc-color-n-100);
+  --tc-color-border-tertiary: var(--tc-color-n-900);
 
   /* TYPOGRAPHY COLOR */
 
   --tc-color-typography-white: var(--tc-color-n-000);
   --tc-color-typography-lightgray: var(--tc-color-n-100);
   --tc-color-typography-gray: var(--tc-color-n-400);
-  --tc-color-typography-darkgray: var(--tc-color-n-500);
+  --tc-color-typography-darker_gray: var(--tc-color-n-500);
   --tc-color-typography-blue: var(--tc-color-n-700);
 
   --tc-typography-typeface: 'Lato', Helvetica, Arial, sans-serif;
 
   /* FONT SIZE */
 
-  --tc-typography-title-max: 1.5rem;
-  --tc-typography-title-medium: 1.25rem;
-  --tc-typography-title-min: 1.125rem;
+  --tc-typography-title-xl: 1.5rem;
+  --tc-typography-title-l: 1.25rem;
+  --tc-typography-title-m: 1.125rem;
 
-  --tc-typography-p-max: 1.25rem;
-  --tc-typography-p-medium: 1.125rem;
-  --tc-typography-p-navbar-min: 0.85rem;
-  --tc-typography-p-min: 0.75rem;
+  --tc-typography-p-l: 1.125rem;
+  --tc-typography-p-m: 1rem;
+  --tc-typography-p-s: 0.85rem;
+  --tc-typography-p-xs: 0.75rem;
 
   /* LEADING */
 
@@ -50,36 +49,22 @@
   /* WIDTH */
 
   --tc-min-width: 250px;
-  --tc-width-login-mobile: 3rem;
-  --tc-width-login-desktop: 4rem;
-  --tc-width-card-desktop-min: 11rem;
-  --tc-width-card-desktop-max: 14rem;
-  --tc-width-img-desktop-min: 9rem;
-  --tc-width-img-desktop-max: 12rem;
 
   /* HEIGHT */
 
-  --tc-height-login-mobile: 3rem;
-  --tc-height-login-desktop: 4rem;
-  --tc-height-navbar: 3.5rem;
-  --tc-height-card-desktop-min: 15rem;
-  --tc-height-card-desktop-max: 18rem;
-  --tc-height-img-mobile: 14rem;
-  --tc-height-img-desktop-min: 9rem;
-  --tc-height-img-desktop-max: 12rem;
   --tc-height-footer: 8rem;
+  --tc-height-login: 3rem;
+  --tc-height-navbar: 3.5rem;
 
   /* MARGIN */
 
   --tc-margin-x3: 3rem;
   --tc-margin-x2: 2rem;
   --tc-margin-x1: 1rem;
-  --tc-margin-half: 0.5rem;
   --tc-margin-quarter: 0.25rem;
 
   /* PADDING */
 
-  --tc-padding-x3: 3rem;
   --tc-padding-x2: 2rem;
   --tc-padding-x1: 1rem;
   --tc-padding-half: 0.5rem;
@@ -90,10 +75,8 @@
   /* GAP */
 
   --tc-flex-gap-x3: 3rem;
-  --tc-flex-gap-x2: 2rem;
   --tc-flex-gap-x1dot5: 1.5rem;
   --tc-flex-gap-x1: 1rem;
-  --tc-flex-gap-half: 0.5rem;
 }
 
 *,
@@ -117,7 +100,7 @@ body {
 h1,
 h3 {
   color: var(--tc-color-typography-gray);
-  font-size: var(--tc-typography-title-min);
+  font-size: var(--tc-typography-title-m);
   line-height: var(--tc-typography-title-leading);
   margin-bottom: var(--tc-margin-x3);
   text-align: center;
@@ -134,14 +117,14 @@ a {
 }
 
 span {
-  font-size: var(--tc-typography-p-min);
+  font-size: var(--tc-typography-p-xs);
   padding-left: var(--tc-padding-quarter);
   text-transform: uppercase;
 }
 
 small {
   color: var(--tc-color-typography-white);
-  font-size: var(--tc-typography-p-min);
+  font-size: var(--tc-typography-p-xs);
 }
 
 header p,
@@ -164,7 +147,7 @@ main img:hover {
 }
 
 main p {
-  color: var(--tc-color-typography-darkgray);
+  color: var(--tc-color-typography-darker_gray);
 }
 
 main p:hover {
@@ -173,7 +156,7 @@ main p:hover {
 
 footer {
   background-color: var(--tc-color-background-secondary);
-  border-top: 0.1rem solid var(--tc-color-border-quarternary);
+  border-top: 0.1rem solid var(--tc-color-border-tertiary);
   height: var(--tc-height-footer);
 }
 
@@ -198,7 +181,7 @@ footer {
 }
 
 .tc-header--menu-login-img {
-  height: var(--tc-height-login-mobile);
+  height: var(--tc-height-login);
 }
 
 .tc-header--menu-login-text {
@@ -211,8 +194,8 @@ footer {
 }
 
 .tc-header--navbar-list {
-  border-top: 0.1rem solid var(--tc-color-border-tertiary);
-  border-bottom: 0.1rem solid var(--tc-color-border-tertiary);
+  border-top: 0.1rem solid var(--tc-color-border-secondary);
+  border-bottom: 0.1rem solid var(--tc-color-border-secondary);
   height: inherit;
   justify-content: center;
 }
@@ -233,7 +216,7 @@ footer {
 }
 
 .tc-header--navbar-item > .tc-header--navbar-link p {
-  font-size: var(--tc-typography-p-min);
+  font-size: var(--tc-typography-p-xs);
   text-transform: uppercase;
 }
 
@@ -254,11 +237,11 @@ footer {
 }
 
 .tc-main--products ul {
-  gap: var(--tc-flex-gap-x2);
+  gap: var(--tc-flex-gap-x3);
 }
 
 .tc-main--products ul > li {
-  border: 0.1rem solid var(--tc-color-border-tertiary);
+  border: 0.1rem solid var(--tc-color-border-secondary);
 }
 
 .tc-main--products ul > li:hover {
@@ -310,28 +293,83 @@ footer {
   .tc-layout-container {
     margin: 0 var(--tc-margin-x2);
   }
-
-  .tc-main--products ul {
-    gap: var(--tc-flex-gap-x3);
-  }
 }
 
 @media screen and (min-width: 400px) {
   h1,
   h3 {
-    font-size: var(--tc-typography-title-medium);
+    font-size: var(--tc-typography-title-l);
   }
 
   .tc-header--navbar-item > .tc-header--navbar-link p {
-    font-size: var(--tc-typography-p-navbar-min);
+    font-size: var(--tc-typography-p-s);
   }
 
   main img {
     padding-top: var(--tc-padding-x2);
   }
 
-  .tc-main section ul > li p {
-    font-size: var(--tc-typography-p-medium);
+  .tc-main ul > li > a > p {
+    font-size: var(--tc-typography-p-l);
     padding-bottom: var(--tc-padding-x2);
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .tc-main--products section > .tc-layout-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .tc-main--products ul > li {
+    width: 42.5%;
+  }
+
+  .tc-main--products ul > li > a > p {
+    font-size: var(--tc-typography-p-s);
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .tc-main--products ul > li > a > p {
+    font-size: var(--tc-typography-p-m);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tc-main--products section > .tc-layout-flex {
+    flex-wrap: nowrap;
+  }
+
+  .tc-main--products ul {
+    gap: var(--tc-flex-gap-x1);
+  }
+
+  .tc-main--products ul > li {
+    width: 22.5%;
+  }
+
+  .tc-main--products ul > li > a > p {
+    font-size: var(--tc-typography-p-s);
+  }
+}
+
+@media screen and (min-width: 950px) {
+  h1,
+  h3 {
+    font-size: var(--tc-typography-title-xl);
+  }
+
+  .tc-header--navbar-item > .tc-header--navbar-link p {
+    font-size: var(--tc-typography-p-m);
+  }
+
+  .tc-main--products ul > li > a > p {
+    font-size: var(--tc-typography-p-l);
+  }
+
+  .tc-footer small {
+    font-size: var(--tc-typography-p-m);
   }
 }
