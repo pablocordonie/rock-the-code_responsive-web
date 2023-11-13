@@ -36,7 +36,6 @@
   --tc-typography-title-l: 1.25rem;
   --tc-typography-title-m: 1.125rem;
 
-  --tc-typography-p-l: 1.125rem;
   --tc-typography-p-m: 1rem;
   --tc-typography-p-s: 0.85rem;
   --tc-typography-p-xs: 0.75rem;
@@ -53,7 +52,8 @@
   /* HEIGHT */
 
   --tc-height-footer: 8rem;
-  --tc-height-login: 3rem;
+  --tc-height-login-min: 3rem;
+  --tc-height-login-max: 3.5rem;
   --tc-height-navbar: 3.5rem;
 
   /* MARGIN */
@@ -77,6 +77,7 @@
   --tc-flex-gap-x3: 3rem;
   --tc-flex-gap-x1dot5: 1.5rem;
   --tc-flex-gap-x1: 1rem;
+  --tc-flex-gap-half: 0.5rem;
 }
 
 *,
@@ -181,7 +182,7 @@ footer {
 }
 
 .tc-header--menu-login-img {
-  height: var(--tc-height-login);
+  height: var(--tc-height-login-min);
 }
 
 .tc-header--menu-login-text {
@@ -254,6 +255,7 @@ footer {
 }
 
 .tc-main--products ul > li > a > p {
+  font-size: var(--tc-typography-p-s);
   padding: 0 var(--tc-padding-x1) var(--tc-padding-x1) var(--tc-padding-x1);
   text-align: center;
 }
@@ -285,11 +287,17 @@ footer {
   }
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 325px) {
   .tc-header--navbar-item {
     padding: 0 var(--tc-padding-percentage-max);
   }
 
+  .tc-main--products ul > li > a > p {
+    font-size: var(--tc-typography-p-m);
+  }
+}
+
+@media screen and (min-width: 360px) {
   .tc-layout-container {
     margin: 0 var(--tc-margin-x2);
   }
@@ -310,7 +318,6 @@ footer {
   }
 
   .tc-main ul > li > a > p {
-    font-size: var(--tc-typography-p-l);
     padding-bottom: var(--tc-padding-x2);
   }
 }
@@ -338,6 +345,17 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .tc-header--menu-login-link {
+    gap: var(--tc-flex-gap-half);
+  }
+
+  .tc-header--menu-login-img {
+    height: var(--tc-height-login-max);
+  }
+
+  .tc-header--menu-login-text {
+    display: inline;
+  }
   .tc-main--products section > .tc-layout-flex {
     flex-wrap: nowrap;
   }
@@ -361,12 +379,16 @@ footer {
     font-size: var(--tc-typography-title-xl);
   }
 
+  .tc-header--menu-login-text {
+    font-size: var(--tc-typography-p-s);
+  }
+
   .tc-header--navbar-item > .tc-header--navbar-link p {
     font-size: var(--tc-typography-p-m);
   }
 
   .tc-main--products ul > li > a > p {
-    font-size: var(--tc-typography-p-l);
+    font-size: var(--tc-typography-p-m);
   }
 
   .tc-footer small {
